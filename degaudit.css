@@ -1,0 +1,38 @@
+
+h3 {
+	color: #CF0404;
+}
+
+h1 {
+	text-align: center;
+}
+
+h2 {
+	text-align: center;
+}
+
+.intro {
+	text-align: center;
+}
+
+#degreebar {
+	text-align: center;
+}
+
+#search {
+	text-align: center;
+}
+
+#Major	{
+	border-style: inset;
+	width: 45%;
+	padding: 20px;
+	float: left;
+}
+
+#Core	{
+	border-style: inset;
+	width: 45%;
+	padding: 20px;
+	float: left;
+}
