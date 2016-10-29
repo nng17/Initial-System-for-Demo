@@ -77,9 +77,11 @@
 			<input type="checkbox" value="CHEM 11"> CHEM 11<br>
 				
 			<!-- After checking classes, submit button will generate form -->	
-			<input type="button" onclick="myFunction()" value="Submit Form">
-			<input type="text" id="order" size="50">
-			<br><br>
+			<input type="button" onclick="openPopup()" value="Submit Form">
+			<div id="test" class="popup">
+    				This is a test message
+    				<div class="cancel" onclick="closePopup();"></div>
+			</div>
 			</form>
 		<br>
 		<br>
@@ -89,17 +91,13 @@
 
 	<!-- Script for Entering Classes -->
 	<script>
-	function myFunction() {
-    	var classes = document.forms[0];
-    	var txt = "";
-    	var i;
-    	for (i = 0; i < classes.length; i++) {
-        	if (classes[i].checked) {
-           	 txt = txt + classes[i].value + " ";
-       	 }
-   	 }
-    	document.getElementById("order").value = "You selected the classes: ," + txt;
+	function openPopup() {
+    		document.getElementById('test').style.display = 'block';
 	}
+
+	function closePopup() {
+    		document.getElementById('test').style.display = 'none';
+	}		
 	</script>
 
 	<div id="Core">
