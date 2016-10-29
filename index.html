@@ -19,24 +19,19 @@
 	Search <input id="searchbar" type="text" name="search" placeholder="Search Class Name...">
 	</div>
 	
+	<div id="submit">
 	<script>
 
 	function doSaveAs(){
 		if (document.execCommand){
-			document.execCommand("SaveAs")
-		}
-		else {
-			alert("Save-feature available only in Internet Exlorer 5.x.")
+			document.execCommand("Submit")
 		}
 	}
 	</script>
 	<form>
-	<input type="button" value="Save This WebPage" onClick="doSaveAs()"
+	<input type="button" value="Submit" onClick="doSaveAs()"
 	</form>
-	<br>
-	<font face="Tahoma"><a target="_blank" href="http://www.javascriptfreecode.com/"><span style="font-size: 8pt; text-decoration: none">JavaScript Free Code</span></a></font>
-	<br>
-	<br>
+	</div>
 
 	<p class="intro">In the "Major" section, check which classes you have fulfilled. In the "Core" section, </p> 
 	<p class="intro">either search for the class above, or enter the class name next to the requirement it fulfills.</p>
