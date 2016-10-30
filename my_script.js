@@ -4,7 +4,7 @@ document.getElementById("ENGR 1").addEventListener("click", function(){
 document.getElementById("ELEN 50").addEventListener("click", function(){
     document.getElementById("ELEN50").innerHTML = "YES";
 }); 
-document.getElementById("ELEN153").addEventListener("click", function(){
+document.getElementById("ELEN 153").addEventListener("click", function(){
     document.getElementById("ELEN153").innerHTML = "YES";
 }); 
 document.getElementById("COEN 10").addEventListener("click", function(){
