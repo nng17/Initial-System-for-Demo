@@ -91,3 +91,6 @@ document.getElementById("PHYS 33").addEventListener("click", function(){
 document.getElementById("CHEM 11").addEventListener("click", function(){
     document.getElementById("CHEM11").innerHTML = "YES";
 });
+document.getElementById("CTW 1").addEventListener("click", function(){
+    document.getElementById("CTW 1").innerHTML = "YES";
+});
