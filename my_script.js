@@ -1,5 +1,5 @@
 document.getElementById("ENGR 1").addEventListener("click", function(){
-    document.getElementById("ENGR").innerHTML = "YES";
+    document.getElementById("ENGR1").innerHTML = "YES";
 }); 
 document.getElementById("ELEN 50").addEventListener("click", function(){
     document.getElementById("ELEN50").innerHTML = "YES";
