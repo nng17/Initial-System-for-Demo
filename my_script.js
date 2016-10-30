@@ -58,3 +58,36 @@ document.getElementById("COEN 196").addEventListener("click", function(){
 document.getElementById("COEN 100-180").addEventListener("click", function(){
     document.getElementById("COEN_ELEC").innerHTML = "YES";
 });
+document.getElementById("MATH 11").addEventListener("click", function(){
+    document.getElementById("MATH11").innerHTML = "YES";
+}); 
+document.getElementById("MATH 12").addEventListener("click", function(){
+    document.getElementById("MATH12").innerHTML = "YES";
+});
+document.getElementById("MATH 13").addEventListener("click", function(){
+    document.getElementById("MATH13").innerHTML = "YES";
+});
+document.getElementById("MATH 14").addEventListener("click", function(){
+    document.getElementById("MATH14").innerHTML = "YES";
+});
+document.getElementById("MATH 53").addEventListener("click", function(){
+    document.getElementById("MATH53").innerHTML = "YES";
+}); 
+document.getElementById("AMTH 106").addEventListener("click", function(){
+    document.getElementById("AMTH106").innerHTML = "YES";
+});
+document.getElementById("AMTH 108").addEventListener("click", function(){
+    document.getElementById("AMTH108").innerHTML = "YES";
+});
+document.getElementById("PHYS 31").addEventListener("click", function(){
+    document.getElementById("PHYS31").innerHTML = "YES";
+});
+document.getElementById("PHYS 32").addEventListener("click", function(){
+    document.getElementById("PHYS32").innerHTML = "YES";
+}); 
+document.getElementById("PHYS 33").addEventListener("click", function(){
+    document.getElementById("PHYS33").innerHTML = "YES";
+});
+document.getElementById("CHEM 11").addEventListener("click", function(){
+    document.getElementById("CHEM11").innerHTML = "YES";
+});
