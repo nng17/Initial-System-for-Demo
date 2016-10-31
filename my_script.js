@@ -1,3 +1,7 @@
+//Changes Table for COEN classes
+//Uses getElementByID and grabs class ID and uses event listeners to see if checkbox is checked
+//If so, uses table row ID and changes innerHTML to YES
+
 document.getElementById("ENGR 1").addEventListener("click", function(){
     document.getElementById("ENGR1").innerHTML = "YES";
 }); 
@@ -90,7 +94,4 @@ document.getElementById("PHYS 33").addEventListener("click", function(){
 });
 document.getElementById("CHEM 11").addEventListener("click", function(){
     document.getElementById("CHEM11").innerHTML = "YES";
-});
-document.getElementById("CTW 1").addEventListener("click", function(){
-    document.getElementById("CTW 1").innerHTML = "YES";
 });
