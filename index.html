@@ -353,6 +353,9 @@
 		$('#convert-table').click( function() {
   			var table = $('#COEN').tableToJSON(); // Convert the table into a javascript object
   			console.log(table);
+			window.alert = null;
+			alert(JSON.stringify(table));
+			delete window.alert;
   			alert(JSON.stringify(table));
 		});
 	</script>
