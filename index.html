@@ -338,14 +338,11 @@
 		
 	<br>
 	<br>
-	<button onClick="doCSV()">
-		Export to CSV
-	</button>
+	<button onClick="makeCSV()">Create CSV</button>
 		
-	</div>
 	<!-- Script for CSV file conversion -->
 	<script>
-		function doCSV() {
+		function makeCSV() {
 			var table = document.getElementByID("COEN").innerHTML;
 			var data = table.replace(/<thread>/g, '')
 				.replace(/<\/thread>/g, '')
@@ -368,7 +365,7 @@
 	
 	<!-- Script for changing table entries according to checkbox -->
 	<script type="text/javascript" src="my_script.js"></script>
-	
+	</div>
 </body>
 </html>
 
