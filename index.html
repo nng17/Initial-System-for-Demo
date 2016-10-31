@@ -267,7 +267,7 @@
 		</tr>
 	</table>
 		
-	<!-- Table for Core Classes
+	<!-- Table for Core Classes -->
 	<table style="width:50%">
  		<tr>
     		<th>Class</th>
@@ -334,33 +334,18 @@
 			<td id = "ELECTIVE2">NO</td>
 		</tr>
 	</table>
-	-->
 		
 	<br>
 	<br>
 	<button onClick="makeCSV()">Create CSV</button>
 		
-	<!-- Script for CSV file conversion -->
+	<!-- Script to convert HTML Table to JSON for storage in later use -->
 	<script>
-		function makeCSV() {
-			var table = document.getElementByID("COEN").innerHTML;
-			var data = table.replace(/<thread>/g, '')
-				.replace(/<\/thread>/g, '')
-				.replace(/<tbody>/g, '')
-				.replace(/<\tbody>/g, '')
-				.replace(/<tr>/g, '')
-				.replace(/<\/tr>/g, '\r\n')
-				.replace(/<th>/g. '')
-				.replace(/<\/th>/g, ';')
-				.replace(/<td>/g, '')
-				.replace(/<\/td>/g, ';')
-				.replace(/\t/g, '')
-				.replace(/\n/g, '')
-			var mylink = document.createElement('a');
-			mylink.download = "csvname.csv";
-			mylink.href = "data:application/csv," + escape(data);
-			mylink.click();
-		}
+		$('#convert-table').click( function() {
+  			var table = $('#example-table').tableToJSON(); // Convert the table into a javascript object
+  			console.log(table);
+  			alert(JSON.stringify(table));
+		});
 	</script>
 	
 	<!-- Script for changing table entries according to checkbox -->
