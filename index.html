@@ -8,7 +8,6 @@
 	}
 	</style>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script type="text/javascript" src="html_to_csv.js" ></script>
 </head>
 	
 <body>
@@ -342,8 +341,18 @@
 	<button onClick="doCSV()">
 		Export to CSV
 	</button>
+		
 	</div>
+	<!-- Script for CSV file conversion -->
+	<script>
+		function doCSV() {
+			var table = document.getElementByID("COEN").innerHTML;
+			alert(table);
+	</script>
+	
+	<!-- Script for changing table entries according to checkbox -->
 	<script type="text/javascript" src="my_script.js"></script>
+	
 </body>
 </html>
 
