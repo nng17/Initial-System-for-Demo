@@ -337,12 +337,11 @@
 		
 	<br>
 	<br>
-	<button onClick="makeCSV()">Create CSV</button>
 		
 	<!-- Script to convert HTML Table to JSON for storage in later use -->
 	<script>
 		$('#convert-table').click( function() {
-  			var table = $('#example-table').tableToJSON(); // Convert the table into a javascript object
+  			var table = $('#COEN').tableToJSON(); // Convert the table into a javascript object
   			console.log(table);
   			alert(JSON.stringify(table));
 		});
