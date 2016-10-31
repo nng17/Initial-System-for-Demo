@@ -347,7 +347,23 @@
 	<script>
 		function doCSV() {
 			var table = document.getElementByID("COEN").innerHTML;
-			alert(table);
+			var data = table.replace(/<thread>/g, '')
+				.replace(/<\/thread>/g, '')
+				.replace(/<tbody>/g, '')
+				.replace(/<\tbody>/g, '')
+				.replace(/<tr>/g, '')
+				.replace(/<\/tr>/g, '\r\n')
+				.replace(/<th>/g. '')
+				.replace(/<\/th>/g, ';')
+				.replace(/<td>/g, '')
+				.replace(/<\/td>/g, ';')
+				.replace(/\t/g, '')
+				.replace(/\n/g, '')
+			var mylink = document.createElement('a');
+			mylink.download = "csvname.csv";
+			mylink.href = "data:application/csv," + escape(data);
+			mylink.click();
+		}
 	</script>
 	
 	<!-- Script for changing table entries according to checkbox -->
