@@ -8,6 +8,7 @@
 	}
 	</style>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="html_to_csv.js" ></script>
 </head>
 	
 <body>
@@ -267,7 +268,7 @@
 	</table>
 	<br>
 	<br>
-	<button type="button">Save Form</button>
+	<input value="Export as CSV" type="button" onclick="$('#example1').table2CSV({header:['Class','Fullfilled?']})">
 	</div>
 	<script type="text/javascript" src="my_script.js"></script>
 </body>
