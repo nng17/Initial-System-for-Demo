@@ -8,6 +8,7 @@
 	}
 	</style>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="test.js"></script>
 </head>
 	
 <body>
@@ -24,31 +25,31 @@
 		<br>
 		<h3>ENGINEERING</h3>
 			<form action="">
-			<input type="checkbox" id="ENGR 1" value="ENGR 1"> ENGR 1<br>
+			<input type="checkbox" id="ENGR 1" onclick="changeText('ENGR 1');"> ENGR 1<br>
 
 		<h3>ELEN</h3>
-			<input type="checkbox" id="ELEN 50" value="ELEN 50"> ELEN 50<br>
-			<input type="checkbox" id="ELEN 153" value="ELEN 153"> ELEN 153<br>
+			<input type="checkbox" id="ELEN 50" onclick="changeText('ELEN50');"> ELEN 50<br>
+			<input type="checkbox" id="ELEN 153" onclick="changeText('ELEN153');"> ELEN 153<br>
 		
 		<h3>COEN</h3>
-			<input type="checkbox" id="COEN 10" value="COEN 10"> COEN 10<br>
-			<input type="checkbox" id="COEN 11" value="COEN 11"> COEN 11<br>
-			<input type="checkbox" id="COEN 12" value="COEN 12"> COEN 12<br>
-			<input type="checkbox" id="COEN 19" value="COEN 19"> COEN 19<br>
-			<input type="checkbox" id="COEN 20" value="COEN 20"> COEN 20<br>
-			<input type="checkbox" id="COEN 21" value="COEN 21"> COEN 21<br>
-			<input type="checkbox" id="COEN 70" value="COEN 70"> COEN 70<br>
-			<input type="checkbox" id="COEN 122" value="COEN 122"> COEN 122<br>
-			<input type="checkbox" id="COEN 146" value="COEN 146"> COEN 146<br>
-			<input type="checkbox" id="COEN 171" value="COEN 171"> COEN 171<br>
-			<input type="checkbox" id="COEN 174" value="COEN 174"> COEN 174<br>
-			<input type="checkbox" id="COEN 175" value="COEN 175"> COEN 175<br>
-			<input type="checkbox" id="COEN 177" value="COEN 177"> COEN 177<br>
-			<input type="checkbox" id="COEN 179" value="COEN 179"> COEN 179<br>
-			<input type="checkbox" id="COEN 194" value="COEN 194"> COEN 194<br>
-			<input type="checkbox" id="COEN 195" value="COEN 195"> COEN 195<br>
-			<input type="checkbox" id="COEN 196" value="COEN 196"> COEN 196<br>
-			<input type="checkbox" id="COEN 100-180" value="COEN 100_180"> COEN Electives<br>
+			<input type="checkbox" id="COEN 10" onclick="changeText('COEN10');"> COEN 10<br>
+			<input type="checkbox" id="COEN 11" onclick="changeText('COEN11');"> COEN 11<br>
+			<input type="checkbox" id="COEN 12" onclick="changeText('COEN12');"> COEN 12<br>
+			<input type="checkbox" id="COEN 19" onclick="changeText('COEN19');"> COEN 19<br>
+			<input type="checkbox" id="COEN 20" onclick="changeText('COEN20');"> COEN 20<br>
+			<input type="checkbox" id="COEN 21" onclick="changeText('COEN21');"> COEN 21<br>
+			<input type="checkbox" id="COEN 70" onclick="changeText('COEN70');"> COEN 70<br>
+			<input type="checkbox" id="COEN 122" onclick="changeText('COEN122');"> COEN 122<br>
+			<input type="checkbox" id="COEN 146" onclick="changeText('COEN146');"> COEN 146<br>
+			<input type="checkbox" id="COEN 171" onclick="changeText('COEN171');"> COEN 171<br>
+			<input type="checkbox" id="COEN 174" onclick="changeText('COEN174');"> COEN 174<br>
+			<input type="checkbox" id="COEN 175" onclick="changeText('COEN175');"> COEN 175<br>
+			<input type="checkbox" id="COEN 177" onclick="changeText('COEN177');"> COEN 177<br>
+			<input type="checkbox" id="COEN 179" onclick="changeText('COEN179');"> COEN 179<br>
+			<input type="checkbox" id="COEN 194" onclick="changeText('COEN194');"> COEN 194<br>
+			<input type="checkbox" id="COEN 195" onclick="changeText('COEN195');"> COEN 195<br>
+			<input type="checkbox" id="COEN 196" onclick="changeText('COEN196');"> COEN 196<br>
+			<input type="checkbox" id="COEN 100-180" onclick="changeText('COEN_ELEC');"> COEN Electives<br>
 
 		
 		<h3>MATH</h3>
@@ -348,7 +349,7 @@
 	<br>
 	<br>
 		
-	<!-- Script to convert HTML Table to JSON for storage in later use -->
+	<!-- Script to convert HTML Table to JSON for storage in later use
 	<script>
 		$('#convert-table').click( function() {
   			var table = $('#COEN').tableToJSON(); // Convert the table into a javascript object
@@ -360,8 +361,10 @@
 		});
 	</script>
 	
-	<!-- Script for changing table entries according to checkbox -->
-	<script type="text/javascript" src="my_script.js"></script>
+	Script for changing table entries according to checkbox
+	<script type="text/javascript" src="my_script.js"></script> -->
+		
+	
 	</div>
 </body>
 </html>
