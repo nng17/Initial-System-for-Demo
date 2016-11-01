@@ -1,7 +1,7 @@
 function changeText(id) {
-	var oldText = document.getElementById(id).innerHTML;
+	//var oldText = document.getElementById(id).innerHTML;
 	console.log("#" + id); 
-	if (oldText == "YES") {
+	if ($("#" + id).html == "YES") {
 		$("#" + id).html("NO");
 	}
 	else {
