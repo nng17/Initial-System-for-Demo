@@ -1,10 +1,13 @@
 function changeText(id) {
-	console.log($("#"+id));
-	//var oldtext = $("#"+id).html();
+	document.getElementById('id').style.color('green');
+	
+	
+	
+	/*console.log($("#"+id));
 	if ($("#"+id).html() == "YES") {
 		$("#" + id).html("NO");
 	}
 	else {
 		$("#" + id).html("YES");
-	}
+	} */
 }
