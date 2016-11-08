@@ -1,5 +1,5 @@
 function changeText(id) {
-	document.getElementById("id").style.color('green');
+	document.getElementById(id).style.backgroundColor = "#008000";
 	
 	
 	
